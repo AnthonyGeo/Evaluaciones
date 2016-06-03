@@ -21,10 +21,13 @@ public class figura {
 		for(int x=cadena.length();x<cadena.length()*2;x++){
         for(int y=1;y<cadena.length()*2+1;y++){
            if(y==aux){
-        	   i++;
-           c1=cadena.substring(i-1,i-1);    
+        	   if(i!=aux-1){
+           c1=cadena.substring(i-1,i);    
            System.out.print(c1);
-            
+           i++;
+        	   }else 
+        		   System.out.print("");
+        		   
            }
            else
         	   System.out.print(" ");
